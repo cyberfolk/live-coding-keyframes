@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.square {
+    height: 50px;
+    width: 50px;
+    background-color: brown;
+    position: absolute;
+    animation-name: move;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    top: 0;
+    left: 0;
+}
+
+@keyframes move {
+    25% {
+        top: 0;
+        left: calc(100% - 50px)
+    }
+
+    50% {
+        top: calc(100% - 50px);
+        left: calc(100% - 50px);
+    }
+
+    75% {
+        top: calc(100% - 50px);
+        left: 0;
+    }
+
+    100% {
+        top: 0;
+        left: 0;
+    }
+}
